@@ -1,0 +1,102 @@
+.banner-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MedievalSharp', cursive; /* Pirate-themed font */
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Optional: text shadow for better visibility */
+  }
+  
+  /* Banner.css */
+.member-area-btn {
+    position: absolute;
+    top: 20px; /* Adjust top padding for better alignment */
+    right: 20px; /* Aligns the button to the right */
+    padding: 10px 20px;
+    background-color: gold; /* Gold color background */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+    overflow: hidden; /* Ensures the pseudo-element doesn't go outside the button bounds */
+  }
+  
+  .member-area-btn:hover {
+    transform: scale(1.1); /* Enlarges the button slightly on hover */
+  }
+  
+  .member-area-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from the left */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.8), transparent);
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .member-area-btn:hover::before {
+    left: 100%; /* Move the gradient from left to right */
+  }
+  
+  /* Banner.css */
+.modal {
+    position: fixed; /* Position relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  /* Banner.css */
+.modal-content {
+    background-color: gold; /* Adjust this color to match your button */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width, adjust as needed */
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;  
+    font-size: 28px;  
+  }
+  
+  
+/* Banner.css */
+.close-btn {
+    float: right;
+    font-size: 28px;  
+    cursor: pointer;
+    font-family: 'MedievalSharp', cursive;  
+  }
+  

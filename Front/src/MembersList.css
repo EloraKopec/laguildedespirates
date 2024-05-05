@@ -1,0 +1,60 @@
+/* MembersList.css */
+.members-list {
+    background-color: #333; /* Much darker gray background, similar to banner overlay */
+    padding: 20px;
+    font-family: 'MedievalSharp', cursive;
+  }
+  
+  .member-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px; /* Increased spacing between cards for clearer separation without lines */
+    padding-bottom: 20px;
+  }
+  
+  .member-card.reverse {
+    flex-direction: row-reverse;
+  }
+  
+/* MembersList.css */
+.member-image img {
+  width: 200px; /* Even larger image size */
+  height: 200px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Keeps the image circular */
+  border: 4px solid white; /* Slightly thicker border to accommodate larger images */
+  object-fit: cover;
+}
+
+  
+  .member-info {
+    flex-grow: 1;
+    padding: 0 30px; /* Increased padding around the text */
+  }
+  
+  .member-info h2 {
+    font-size: 28px; /* Slightly larger font size for names */
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0;
+    color: #fff; /* Ensuring text is white for contrast */
+  }
+  
+  .member-info p {
+    margin: 5px 0;
+    font-size: 18px; /* Larger text size for better readability */
+    color: #ddd; /* Lighter grey text for less contrast and more readability */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .member-card, .member-card.reverse {
+      flex-direction: column;
+      text-align: center;
+    }
+    .member-image img {
+      margin-bottom: 20px; /* Adds space below the image on smaller screens */
+    }
+    .member-info {
+      padding: 10px 0;
+    }
+  }
+  

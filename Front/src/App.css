@@ -1,4 +1,8 @@
+/* Add this at the top of your App.css or index.css */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 .App {
+
   text-align: center;
 }
 
@@ -36,3 +40,96 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Set background color to black */
+  color: #fff; /* Set text color to white for better contrast */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* App.css */
+.section-title {
+  text-align: center;
+  font-size: 45px; /* Large font size for visibility */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Padding for spacing around the title */
+  font-family: 'MedievalSharp', cursive; /* Consistent font theme */
+}
+
+/* Additional global styles can go here */
+/* App.css */
+.wave-animation {
+  height: 20px;
+  background: linear-gradient(270deg, #000, #fff, #000, #fff);
+  background-size: 400% 400%;
+  animation: wave-animation 4s linear infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* App.css */
+/* App.css */
+.wave-container {
+  height: 50px; /* Height of the wave effect */
+  overflow: hidden; /* Hides anything outside the container */
+  margin-top: 20px; /* Space between title and wave */
+}
+
+.wind-effect {
+  position: relative;
+  height: 50px; /* Adjust height based on your design needs */
+  overflow: hidden; /* Keeps the text contained within the bounds of the wind-effect div */
+  font-family: 'Arial', sans-serif; /* Choose a whimsical or flowing font if available */
+}
+
+/* App.css */
+/* App.css */
+.wind-effect {
+  position: relative;
+  height: 50px;  
+  overflow: hidden;  
+  font-family: 'Arial', sans-serif; 
+  font-size: 24px;
+  color: #ddd; 
+}
+
+.wind-text {
+  position: absolute;
+  white-space: nowrap;
+  animation: blow-wind 10s linear infinite;
+}
+
+.wind-text:nth-child(1) {
+  top: 0;
+  animation-delay: 0s;
+}
+
+.wind-text:nth-child(2) {
+  top: 20px;
+  animation-delay: 3s;
+}
+
+.wind-text:nth-child(3) {
+  top: 40px;
+  animation-delay: 6s;
+}
+
+@keyframes blow-wind {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
